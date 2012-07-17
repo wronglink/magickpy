@@ -8,7 +8,7 @@ __all__ = [
 import ctypes
 import atexit
 
-for dll_name in ('libMagickCore.so', 'libMagick.so', 'CORE_RL_magick_.dll'):
+for dll_name in ('libMagickCore.so', 'libMagick.so', 'CORE_RL_magick_.dll', '/opt/local/lib/libMagickCore.dylib'):
     try:
         lib = ctypes.CDLL(dll_name)
     except OSError:
